@@ -4,10 +4,7 @@
 }
 @media screen and (max-width:875px){
   .un-li{
-    width:90vw;
-  }
-  .creeper-row{
-    justify-content: center;
+    width:95vw;
   }
 }
 .loader {

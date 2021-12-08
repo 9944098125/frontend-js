@@ -1,15 +1,33 @@
-@media screen and (min-width: 875px) {
-  .question-container {
-    padding: 10px;
+.question-container {
+  background-image: url("https://res.cloudinary.com/dakda5ni3/image/upload/v1638980991/Screenshot_57_ut46pk.png");
+  background-size: cover;
+  padding: 20px;
+  width: 65vw;
+  list-style-type: none;
+  border: 5px solid rgb(245, 161, 6);
+  border-radius: 40px;
+  margin-bottom:20px;
+}
+.question {
+  font-family: Apple Chancery, cursive;
+  font-size: 30px;
+  font-weight: 700;
+  color: bisque;
+}
+.answer {
+  font-family: Apple Chancery, cursive;
+  font-size: 25px;
+  font-weight: 500;
+  color: bisque;
+}
+@media screen and (max-width: 812px) {
+  .answer {
+    font-size: 15px;
   }
   .question {
-    font-family: Brush Script MT, Brush Script Std, cursiv;
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 20px;
   }
-  .answer {
-    font-family: Brush Script MT, Brush Script Std, cursiv;
-    font-size: 25px;
-    font-weight: 500;
+  .question-container{
+    margin-left: 40px;
   }
 }

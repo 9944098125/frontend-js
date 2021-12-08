@@ -1,49 +1,49 @@
 import { Component } from "react";
 import CommonChild from "../CommonChild";
 import Loader from "react-loader-spinner";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./index.css";
 
-export default class Javascript extends Component {
+export default class React extends Component {
   state = {
-    jsQuestions: [],
+    reactQuestions: [],
     isLoading: false,
   };
 
   componentDidMount = () => {
-    this.getJSQuestions();
-  }
+    this.getReactQuestions();
+  };
 
-  getJSQuestions = async () => {
+  getReactQuestions = async () => {
     this.setState({ isLoading: true });
-    const javascriptUrl = "https://javascipt-imp.herokuapp.com/javascript";
+    const reactUrl = " https://react-imp.herokuapp.com/react";
     const options = {
       method: "GET",
     };
-    const response = await fetch(javascriptUrl, options);
-    if (response.ok){
+    const response = await fetch(reactUrl, options);
+    if (response.ok) {
       const fetchedData = await response.json();
       console.log(fetchedData);
-      const jsData = fetchedData.map(each => ({
-        id:each.id,
-        question:each.question,
-        answer:each.answer
+      const reactData = fetchedData.map((each) => ({
+        id: each.id,
+        question: each.question,
+        answer: each.answer,
       }));
       this.setState({
-        jsQuestions: jsData,
+        reactQuestions: reactData,
         isLoading: false,
       });
     }
   };
 
-  renderJSQuestions = () => {
-    const { jsQuestions } = this.state;
+  renderReactQuestions = () => {
+    const { reactQuestions } = this.state;
     return (
       <>
-        <h1 className="question-head">Javascript Questions</h1>
+        <h1 className="question-head">React Questions</h1>
         <div className="creeper-row">
           <ul className="un-li">
-            {jsQuestions.map((each) => (
+            {reactQuestions.map((each) => (
               <CommonChild language={each} key={each.id} />
             ))}
           </ul>
@@ -57,17 +57,17 @@ export default class Javascript extends Component {
           <Link to="/" className="link">
             Home
           </Link>
-          <Link to="/react" className="link">
-            React
+          <Link to="/sql" className="link">
+            SQL
           </Link>
-          <Link to="/node" className="link">
-            Node
+          <Link to="/javascript" className="link">
+            Javascript
           </Link>
           <Link to="/python" className="link">
             Python
           </Link>
-          <Link to="/sql" className="link">
-            SQL
+          <Link to="/node" className="link">
+            node
           </Link>
         </div>
       </>
@@ -83,6 +83,6 @@ export default class Javascript extends Component {
   render() {
     const { isLoading } = this.state;
 
-    return isLoading ? this.renderLoader() : this.renderJSQuestions();
+    return isLoading ? this.renderLoader() : this.renderReactQuestions();
   }
 }
