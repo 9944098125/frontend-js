@@ -1,0 +1,109 @@
+@media screen and (min-width: 875px) {
+  .mobile-home-container {
+    display: none;
+  }
+  .desktop-home-container {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .sidebar {
+    width: 20vw;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imp-head {
+    font-size: 30px;
+    font-family: fantasy;
+    font-weight: 500;
+    color: darkslategrey;
+    text-align: center;
+  }
+  .sideheads {
+    margin-top: 20px;
+    background-color: darkslategrey;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 15px;
+  }
+  .link-heads {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    font-family: cursive;
+    border: 1px solid white;
+    padding: 5px;
+  }
+  .text-container {
+    background-color: rgba(74, 106, 117, 0.411);
+    width: 81vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-head {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+  }
+  .home-img-desktop {
+    height: 80vh;
+    width: 60vw;
+    margin-top: 30px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .desktop-home-container {
+    display: none;
+  }
+  .mobile-home-container {
+    border: 2px solid coral;
+    padding: 10px;
+    width: 65vw;
+  }
+  .mobile-head {
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 500;
+  }
+  .top-links-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    background-color: darkslategrey;
+    width: 60vw;
+    border-radius: 15px;
+  }
+  .link-heads-mobile {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 300;
+    margin: 8px;
+    font-family: cursive;
+    border: 1px solid white;
+    padding: 2px;
+    border-radius: 10px;
+  }
+  .home-head-mobile {
+    font-size: 28px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+  }
+  .home-img-mobile {
+    height: 250px;
+    width: 240px;
+    border-radius: 20px;
+  }
+}

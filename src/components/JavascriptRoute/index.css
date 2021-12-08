@@ -1,0 +1,10 @@
+.un-li {
+  width: 90vw;
+  padding: 20px;
+}
+.loader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,15 @@
+@media screen and (min-width: 875px) {
+  .question-container {
+    padding: 10px;
+  }
+  .question {
+    font-family: Brush Script MT, Brush Script Std, cursiv;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .answer {
+    font-family: Brush Script MT, Brush Script Std, cursiv;
+    font-size: 25px;
+    font-weight: 500;
+  }
+}
