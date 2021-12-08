@@ -18,3 +18,5 @@ export default function App(){
         </Switch>
     );
 };
+
+// https://vibrant-nightingale-2c81c3.netlify.app/     <= deployed url
